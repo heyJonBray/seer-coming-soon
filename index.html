@@ -7,8 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Seer Space — Coming Soon</title>
+    <title>Seer Space | Prediction market aggregation and arbitrage</title>
     <meta name="description" content="Seer Space — Prediction market aggregation and arbitrage." />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo-minimal-square.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo-minimal-square.png" />
     <style>
       :root {
         --bg: #ede9dd;
@@ -29,6 +31,7 @@
           "Segoe UI Emoji";
         display: grid;
         place-items: center;
+        position: relative;
       }
       .wrap {
         text-align: center;
@@ -50,6 +53,38 @@
         margin: 0;
         color: var(--muted);
       }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .farcaster-icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        vertical-align: -1em;
+        margin-right: 0.25em;
+      }
+      .divider {
+        display: block;
+        width: 200px;
+        height: 1px;
+        background: var(--muted);
+        margin: 12px auto;
+        opacity: 0.3;
+      }
+      .copyright {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        font-size: 12px;
+        color: var(--muted);
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -58,6 +93,11 @@
       <img src="/assets/logo-minimal-square.png" alt="Seer Space" />
       <h1>Coming soon</h1>
       <p>seer.space</p>
+      <div class="divider"></div>
+      <p><img src="/assets/farcaster-icon.svg" alt="Farcaster" class="farcaster-icon" /> Follow <a href="https://farcaster.xyz/seerspace">@seerspace</a> on Farcaster</p>
     </main>
+    <footer class="copyright">
+      <p>&copy; 2025 Seer Space. All rights reserved.</p>
+    </footer>
   </body>
 </html>
